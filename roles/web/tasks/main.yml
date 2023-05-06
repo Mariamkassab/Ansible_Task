@@ -1,0 +1,7 @@
+  - name: install
+    apt:
+     name: "{{ package_name }}"
+     state: "{{ package_version }}"
+    notify: coping
+
+

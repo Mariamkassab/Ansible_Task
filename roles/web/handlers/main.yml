@@ -1,0 +1,18 @@
+  - name: coping
+    copy:
+      src: "{{ item }}"
+      dest: /var/www/html/{{ item }}
+    loop: "{{ my_list }}"
+    notify: dynamic_index
+
+  - name: dynamic_index
+    template:
+      src: index.html.j2
+      dest: /var/www/html/index.html.j2
+    notify: restarting
+
+  - name: restarting
+    ansible.builtin.sysvinit:
+     name:  "{{ package_name }}"
+     state: restarted
+     enabled: yes

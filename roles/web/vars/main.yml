@@ -1,0 +1,6 @@
+   package_name: nginx
+   package_version: latest
+   welcome_msg: HELLO!, Here is Mariam :)
+   my_list:
+     - script.js
+     - style.css
