@@ -1,6 +1,6 @@
 # Ansible_Tasks
 ---
-##Tasks:
+## Tasks:
 * Create your first role with name (web)
 * The task book will include:
 * 1. installing a package
@@ -15,6 +15,8 @@
       * (will be executed using Handlers)
 * Restart the service of the installed package
       * (will be executed using Handlers chaining)
-      ---
       
-      ![image](https://user-images.githubusercontent.com/123699968/236650242-2ef6d083-1438-43d9-8f37-33911749244a.png)
+---
+
+      
+![Screenshot from 2023-05-07 02-27-53](https://user-images.githubusercontent.com/123699968/236650378-8d6304f5-4acb-4695-bb42-3964392aa8fd.png)
